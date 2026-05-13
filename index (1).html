@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>isaiahs portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/2.44.0/iconfont/tabler-icons.min.css" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #0d1117;
+      font-family: 'Rajdhani', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem 1rem;
+    }
+
+    .launcher-wrap {
+      width: 100%;
+      max-width: 500px;
+      padding: 2.5rem 2.5rem 3rem;
+      border-radius: 16px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .launcher-wrap::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(99,102,241,0.14) 0%, transparent 65%);
+      pointer-events: none;
+    }
+
+    .top-icons {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.75rem;
+      display: flex;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .top-icons i {
+      font-size: 20px;
+      color: #6b7280;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .top-icons i:hover { color: #a5b4fc; }
+    .top-icons .sparkle { color: #c084fc; }
+
+    .header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .header h1 {
+      font-family: 'Orbitron', monospace;
+      font-size: 2.6rem;
+      font-weight: 800;
+      background: linear-gradient(135deg, #818cf8 0%, #a78bfa 50%, #60a5fa 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 1px;
+      margin-bottom: 0.25rem;
+    }
+
+    .version {
+      font-family: 'Orbitron', monospace;
+      font-size: 0.9rem;
+      color: #818cf8;
+      margin-bottom: 0.4rem;
+    }
+
+    .tagline {
+      color: #6b7280;
+      font-size: 1rem;
+      margin-top: 0.5rem;
+      letter-spacing: 0.4px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 14px;
+      padding: 3rem 1rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s, transform 0.15s;
+      text-align: center;
+      text-decoration: none;
+    }
+
+    .card:hover {
+      background: rgba(255,255,255,0.08);
+      border-color: rgba(255,255,255,0.16);
+      transform: translateY(-3px);
+    }
+
+    .icon-wrap {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      background: rgba(59,130,246,0.2);
+      color: #60a5fa;
+    }
+
+    .card-title {
+      color: #e2e8f0;
+      font-size: 1.4rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
+    .card-desc {
+      color: #6b7280;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+<body>
+  <div class="launcher-wrap">
+    <div class="top-icons">
+      <i class="ti ti-sparkles sparkle" aria-hidden="true"></i>
+      <i class="ti ti-moon" aria-hidden="true"></i>
+      <i class="ti ti-settings-2" aria-hidden="true"></i>
+      <i class="ti ti-arrows-exchange" aria-hidden="true"></i>
+      <i class="ti ti-settings" aria-hidden="true"></i>
+    </div>
+
+    <div class="header">
+      <h1>isaiahs portal</h1>
+      <p class="version">version 1.0</p>
+      <p class="tagline">your personalized launchpad for web apps</p>
+    </div>
+
+    <a href="https://docs.google.com/document/d/1k9qzt9XX4_usMa0RmZiqU3kbQ2wtbnK_WvvaSEwB3LE/edit?usp=sharing" target="_blank" class="card">
+      <div class="icon-wrap"><i class="ti ti-shield-lock" aria-hidden="true"></i></div>
+      <p class="card-title">proxy portal</p>
+      <p class="card-desc">secure & private browsing.</p>
+    </a>
+  </div>
+</body>
+</html>
